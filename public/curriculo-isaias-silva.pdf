@@ -444,7 +444,7 @@ endobj
 endobj
 6 0 obj
 <<
-/Length 9734
+/Length 10960
 >>
 stream
 1.1338582677165356 w
@@ -721,7 +721,7 @@ BT
 12.6499999999999986 TL
 0.059 0.09 0.165 rg
 51.0236220472441033 416.6931496062990732 Td
-(PROJETOS RELEVANTES) Tj
+(PROJETOS DE ENGENHARIA & DESENVOLVIMENTO) Tj
 ET
 0.8 0.84 0.88 RG
 1.1338582677165356 w
@@ -729,167 +729,392 @@ ET
 544.2519685039370643 411.0238582677163777 l
 S
 BT
-/F2 9 Tf
-10.3499999999999996 TL
+/F2 9.5 Tf
+10.9249999999999989 TL
 0.118 0.161 0.231 rg
 51.0236220472441033 396.8506299212597241 Td
-(Gestão de Estoque e Vendas \(Python/Django\)) Tj
+(SaaS de Gestão Empresarial \(ERP Cloud Multi-tenant\)) Tj
 ET
 BT
-/F1 9 Tf
-10.3499999999999996 TL
-0.2 0.255 0.333 rg
+/F2 8.5 Tf
+9.7749999999999986 TL
+0.047 0.557 0.914 rg
 56.6929133858267775 385.5120472440943331 Td
+(Stack: ) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+84.3179133858267704 385.5120472440943331 Td
+(Python, Django REST, React, PostgreSQL, Redis, Docker, Celery, BrasilAPI) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.2 0.255 0.333 rg
+56.6929133858267775 370.488425196850244 Td
 (•) Tj
 ET
 BT
 /F1 9 Tf
 10.3499999999999996 TL
 0.2 0.255 0.333 rg
-70.8661417322834666 385.5120472440943331 Td
-(Sistema de gestão de estoque e controle de vendas com fluxo de caixa e dashboard de visualização. Em produção.) Tj
+70.8661417322834666 370.488425196850244 Td
+(Plataforma multi-tenant com isolamento lógico de dados, importação automática de NF-e/XML com decodificação de) Tj
+T* (chave de 44 dígitos, módulo fiscal com regimes tributários, controle de estoque auditado, emissão de pedidos PDV e) Tj
+T* (fluxo de caixa.) Tj
 ET
 BT
-/F2 9 Tf
-10.3499999999999996 TL
+/F2 9.5 Tf
+10.9249999999999989 TL
 0.118 0.161 0.231 rg
-51.0236220472441033 369.354566929133739 Td
-(Portal Institucional em Drupal 9) Tj
+51.0236220472441033 327.6852755905509866 Td
+(Plataforma de Monitoramento IoT) Tj
+ET
+BT
+/F2 8.5 Tf
+9.7749999999999986 TL
+0.047 0.557 0.914 rg
+56.6929133858267775 316.3466929133857093 Td
+(Stack: ) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+84.3179133858267704 316.3466929133857093 Td
+(Python, Django, Django REST Framework, MQTT, PostgreSQL, Docker, WebSockets, TimescaleDB) Tj
 ET
 BT
 /F1 9 Tf
 10.3499999999999996 TL
 0.2 0.255 0.333 rg
-56.6929133858267775 358.0159842519684048 Td
+56.6929133858267775 301.3230708661415065 Td
 (•) Tj
 ET
 BT
 /F1 9 Tf
 10.3499999999999996 TL
 0.2 0.255 0.333 rg
-70.8661417322834666 358.0159842519684048 Td
-(Portal institucional com módulos personalizados, tipos de conteúdo e views configuráveis; integração com APIs) Tj
-T* (externas e cache para performance.) Tj
+70.8661417322834666 301.3230708661415065 Td
+(Sistema distribuído para ingestão e telemetria contínua de sensores em tempo real via broker MQTT, motor de regras) Tj
+T* (para disparo de alertas e dashboards de supervisão temporal.) Tj
 ET
 BT
-/F2 9 Tf
-10.3499999999999996 TL
+/F2 9.5 Tf
+10.9249999999999989 TL
 0.118 0.161 0.231 rg
-51.0236220472441033 329.9529921259841103 Td
-(Intranet Corporativa \(Drupal\)) Tj
+51.0236220472441033 270.4254330708658927 Td
+(Sistema de Service Desk & Suporte Corporativo) Tj
+ET
+BT
+/F2 8.5 Tf
+9.7749999999999986 TL
+0.047 0.557 0.914 rg
+56.6929133858267775 259.0868503937006153 Td
+(Stack: ) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+84.3179133858267704 259.0868503937006153 Td
+(Python, Django, Django REST Framework, PostgreSQL, Docker, Postman, Bootstrap) Tj
 ET
 BT
 /F1 9 Tf
 10.3499999999999996 TL
 0.2 0.255 0.333 rg
-56.6929133858267775 318.6144094488187193 Td
+56.6929133858267775 244.0632283464564125 Td
 (•) Tj
 ET
 BT
 /F1 9 Tf
 10.3499999999999996 TL
 0.2 0.255 0.333 rg
-70.8661417322834666 318.6144094488187193 Td
-(Intranet com autenticação LDAP integrada ao Active Directory; dashboard administrativo, permissões e módulos de) Tj
-T* (comunicados e documentos.) Tj
+70.8661417322834666 244.0632283464564125 Td
+(Central de incidentes e requisições de TI com triagem categorizada, controle visual de matriz de prioridades,) Tj
+T* (monitoramento de SLAs e histórico auditável de chamados.) Tj
 ET
 BT
-/F2 9 Tf
-10.3499999999999996 TL
+/F2 9.5 Tf
+10.9249999999999989 TL
 0.118 0.161 0.231 rg
-51.0236220472441033 290.5514173228344816 Td
-(CRM Customizado – Microsoft Dynamics 365) Tj
+51.0236220472441033 213.1655905511807987 Td
+(Plataforma LMS \(Ambiente Virtual de Aprendizagem\)) Tj
+ET
+BT
+/F2 8.5 Tf
+9.7749999999999986 TL
+0.047 0.557 0.914 rg
+56.6929133858267775 201.8270078740155213 Td
+(Stack: ) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+84.3179133858267704 201.8270078740155213 Td
+(Python, Django, Django REST Framework, PostgreSQL, Docker, JavaScript, HTML5/CSS3) Tj
 ET
 BT
 /F1 9 Tf
 10.3499999999999996 TL
 0.2 0.255 0.333 rg
-56.6929133858267775 279.2128346456690906 Td
+56.6929133858267775 186.8033858267713185 Td
 (•) Tj
 ET
 BT
 /F1 9 Tf
 10.3499999999999996 TL
 0.2 0.255 0.333 rg
-70.8661417322834666 279.2128346456690906 Td
-(Plugins e APIs para o módulo de Vendas, com automação de cálculos, integração via Power Automate e revalidação) Tj
-T* (de promoções em tempo real.) Tj
+70.8661417322834666 186.8033858267713185 Td
+(Ambiente educacional modular com trilhas pedagógicas, módulos de aulas em vídeo/texto, exercícios interativos com) Tj
+T* (correção automática e emissão autenticada de certificados.) Tj
 ET
 BT
-/F2 9 Tf
-10.3499999999999996 TL
+/F2 9.5 Tf
+10.9249999999999989 TL
 0.118 0.161 0.231 rg
-51.0236220472441033 251.149842519684853 Td
-(Plataforma de Monitoramento de Ambientes Embarcados \(Python/Django\)) Tj
+51.0236220472441033 155.9057480314957047 Td
+(ERP Comercial & Varejo) Tj
+ET
+BT
+/F2 8.5 Tf
+9.7749999999999986 TL
+0.047 0.557 0.914 rg
+56.6929133858267775 144.5671653543304274 Td
+(Stack: ) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+84.3179133858267704 144.5671653543304274 Td
+(PHP, Laravel 11, PostgreSQL, Redis, Docker, Tailwind CSS, Alpine.js) Tj
 ET
 BT
 /F1 9 Tf
 10.3499999999999996 TL
 0.2 0.255 0.333 rg
-56.6929133858267775 239.8112598425194619 Td
+56.6929133858267775 129.5435433070862246 Td
 (•) Tj
 ET
 BT
 /F1 9 Tf
 10.3499999999999996 TL
 0.2 0.255 0.333 rg
-70.8661417322834666 239.8112598425194619 Td
-(Microsserviços para coleta e análise de dados embarcados, com integração em tempo real via MQTT e REST API;) Tj
-T* (deploy contínuo com Docker e Jenkins.) Tj
+70.8661417322834666 129.5435433070862246 Td
+(Gestão unificada do ciclo comercial: cadastro de clientes/fornecedores, pedidos de venda, ordens de compra, controle) Tj
+T* (de estoque com ponto de ressuprimento e fluxo de caixa.) Tj
 ET
 BT
-/F2 9 Tf
-10.3499999999999996 TL
+/F2 9.5 Tf
+10.9249999999999989 TL
 0.118 0.161 0.231 rg
-51.0236220472441033 211.7482677165352243 Td
-(Automação de Fluxos de Aprovação \(Power Automate\)) Tj
+51.0236220472441033 98.6459055118106107 Td
+(Sistema de Help Desk & Gestão de SLA) Tj
 ET
+BT
+/F2 8.5 Tf
+9.7749999999999986 TL
+0.047 0.557 0.914 rg
+56.6929133858267775 87.3073228346453334 Td
+(Stack: ) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+84.3179133858267704 87.3073228346453334 Td
+(PHP, Laravel, PostgreSQL, Docker, REST API, Tailwind CSS, Redis) Tj
+ET
+endstream
+endobj
+7 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 8 0 R
+>>
+endobj
+8 0 obj
+<<
+/Length 3773
+>>
+stream
+1.1338582677165356 w
+0.8 0.84 0.88 RG
 BT
 /F1 9 Tf
 10.3499999999999996 TL
 0.2 0.255 0.333 rg
-56.6929133858267775 200.4096850393698332 Td
+56.6929133858267775 790.8663779527558972 Td
 (•) Tj
 ET
 BT
 /F1 9 Tf
 10.3499999999999996 TL
 0.2 0.255 0.333 rg
-70.8661417322834666 200.4096850393698332 Td
-(Fluxos integrando Dynamics 365, SharePoint e Outlook para aprovação de propostas comerciais, reduzindo o tempo) Tj
-T* (de aprovação em 40%.) Tj
+70.8661417322834666 790.8663779527558972 Td
+(Plataforma de suporte com filas de trabalho departamentais, controle e alertas de estouro de SLA, múltiplos anexos e) Tj
+T* (relatórios gerenciais de desempenho.) Tj
 ET
 BT
-/F2 9 Tf
-10.3499999999999996 TL
+/F2 9.5 Tf
+10.9249999999999989 TL
 0.118 0.161 0.231 rg
-51.0236220472441033 172.3466929133855956 Td
-(Sistema de Gestão de Chamados Técnicos \(Laravel\)) Tj
+51.0236220472441033 759.9687401574802834 Td
+(Plataforma de Eventos & Credenciamento Digital) Tj
+ET
+BT
+/F2 8.5 Tf
+9.7749999999999986 TL
+0.047 0.557 0.914 rg
+56.6929133858267775 748.6301574803148924 Td
+(Stack: ) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+84.3179133858267704 748.6301574803148924 Td
+(PHP, Laravel, PostgreSQL, Tailwind CSS, JavaScript, QR Code Engine) Tj
 ET
 BT
 /F1 9 Tf
 10.3499999999999996 TL
 0.2 0.255 0.333 rg
-56.6929133858267775 161.0081102362202046 Td
+56.6929133858267775 733.6065354330708033 Td
 (•) Tj
 ET
 BT
 /F1 9 Tf
 10.3499999999999996 TL
 0.2 0.255 0.333 rg
-70.8661417322834666 161.0081102362202046 Td
-(Sistema com autenticação, níveis de permissão e PostgreSQL; relatórios de SLA e painéis de acompanhamento de) Tj
-T* (tickets.) Tj
+70.8661417322834666 733.6065354330708033 Td
+(Sistema de publicação de eventos e congressos, gestão de inscrições por lotes de ingressos, emissão de vouchers) Tj
+T* (com QR Code e check-in instantâneo via câmera.) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+51.0236220472441033 702.7088976377953031 Td
+(SaaS de Governança de Contratos) Tj
+ET
+BT
+/F2 8.5 Tf
+9.7749999999999986 TL
+0.047 0.557 0.914 rg
+56.6929133858267775 691.3703149606299121 Td
+(Stack: ) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+84.3179133858267704 691.3703149606299121 Td
+(PHP, Laravel, PostgreSQL, Docker, Tailwind CSS, Redis, Cron Scheduler) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.2 0.255 0.333 rg
+56.6929133858267775 676.346692913385823 Td
+(•) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.2 0.255 0.333 rg
+70.8661417322834666 676.346692913385823 Td
+(Governança e administração de contratos corporativos, alertas preventivos de vencimentos de vigência,) Tj
+T* (versionamento de aditivos e fluxo formal de aprovações multinível.) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+51.0236220472441033 645.4490551181102092 Td
+(API de E-commerce com Microsserviços) Tj
+ET
+BT
+/F2 8.5 Tf
+9.7749999999999986 TL
+0.047 0.557 0.914 rg
+56.6929133858267775 634.1104724409448181 Td
+(Stack: ) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+84.3179133858267704 634.1104724409448181 Td
+(Java, Spring Boot, Spring Security, Spring Cloud Gateway, PostgreSQL, Docker, JWT, OpenAPI) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.2 0.255 0.333 rg
+56.6929133858267775 619.086850393700729 Td
+(•) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.2 0.255 0.333 rg
+70.8661417322834666 619.086850393700729 Td
+(Ecossistema desacoplado de microsserviços com API Gateway, autenticação centralizada JWT, catálogo, estoque,) Tj
+T* (ciclo de vida de pedidos e integração de pagamentos.) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+51.0236220472441033 588.1892125984251152 Td
+(Sistema Financeiro & Banking API) Tj
+ET
+BT
+/F2 8.5 Tf
+9.7749999999999986 TL
+0.047 0.557 0.914 rg
+56.6929133858267775 576.8506299212597241 Td
+(Stack: ) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+84.3179133858267704 576.8506299212597241 Td
+(Java, Spring Boot, Spring Security, Spring Data JPA, PostgreSQL, Docker, JWT, JUnit/Mockito) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.2 0.255 0.333 rg
+56.6929133858267775 561.827007874015635 Td
+(•) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.2 0.255 0.333 rg
+70.8661417322834666 561.827007874015635 Td
+(API bancária transacional com isolamento de contas correntes, transferências com bloqueio atômico contra saldo) Tj
+T* (negativo, extratos detalhados e trilhas de auditoria imutáveis.) Tj
 ET
 endstream
 endobj
 1 0 obj
 <</Type /Pages
-/Kids [3 0 R 5 0 R ]
-/Count 2
+/Kids [3 0 R 5 0 R 7 0 R ]
+/Count 3
 >>
 endobj
-7 0 obj
+9 0 obj
 <<
 /Type /Font
 /BaseFont /Helvetica
@@ -899,7 +1124,7 @@ endobj
 /LastChar 255
 >>
 endobj
-8 0 obj
+10 0 obj
 <<
 /Type /Font
 /BaseFont /Helvetica-Bold
@@ -909,7 +1134,7 @@ endobj
 /LastChar 255
 >>
 endobj
-9 0 obj
+11 0 obj
 <<
 /Type /Font
 /BaseFont /Helvetica-Oblique
@@ -919,7 +1144,7 @@ endobj
 /LastChar 255
 >>
 endobj
-10 0 obj
+12 0 obj
 <<
 /Type /Font
 /BaseFont /Helvetica-BoldOblique
@@ -929,7 +1154,7 @@ endobj
 /LastChar 255
 >>
 endobj
-11 0 obj
+13 0 obj
 <<
 /Type /Font
 /BaseFont /Courier
@@ -939,7 +1164,7 @@ endobj
 /LastChar 255
 >>
 endobj
-12 0 obj
+14 0 obj
 <<
 /Type /Font
 /BaseFont /Courier-Bold
@@ -949,7 +1174,7 @@ endobj
 /LastChar 255
 >>
 endobj
-13 0 obj
+15 0 obj
 <<
 /Type /Font
 /BaseFont /Courier-Oblique
@@ -959,7 +1184,7 @@ endobj
 /LastChar 255
 >>
 endobj
-14 0 obj
+16 0 obj
 <<
 /Type /Font
 /BaseFont /Courier-BoldOblique
@@ -969,7 +1194,7 @@ endobj
 /LastChar 255
 >>
 endobj
-15 0 obj
+17 0 obj
 <<
 /Type /Font
 /BaseFont /Times-Roman
@@ -979,7 +1204,7 @@ endobj
 /LastChar 255
 >>
 endobj
-16 0 obj
+18 0 obj
 <<
 /Type /Font
 /BaseFont /Times-Bold
@@ -989,7 +1214,7 @@ endobj
 /LastChar 255
 >>
 endobj
-17 0 obj
+19 0 obj
 <<
 /Type /Font
 /BaseFont /Times-Italic
@@ -999,7 +1224,7 @@ endobj
 /LastChar 255
 >>
 endobj
-18 0 obj
+20 0 obj
 <<
 /Type /Font
 /BaseFont /Times-BoldItalic
@@ -1009,7 +1234,7 @@ endobj
 /LastChar 255
 >>
 endobj
-19 0 obj
+21 0 obj
 <<
 /Type /Font
 /BaseFont /ZapfDingbats
@@ -1018,7 +1243,7 @@ endobj
 /LastChar 255
 >>
 endobj
-20 0 obj
+22 0 obj
 <<
 /Type /Font
 /BaseFont /Symbol
@@ -1031,32 +1256,32 @@ endobj
 <<
 /ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
 /Font <<
-/F1 7 0 R
-/F2 8 0 R
-/F3 9 0 R
-/F4 10 0 R
-/F5 11 0 R
-/F6 12 0 R
-/F7 13 0 R
-/F8 14 0 R
-/F9 15 0 R
-/F10 16 0 R
-/F11 17 0 R
-/F12 18 0 R
-/F13 19 0 R
-/F14 20 0 R
+/F1 9 0 R
+/F2 10 0 R
+/F3 11 0 R
+/F4 12 0 R
+/F5 13 0 R
+/F6 14 0 R
+/F7 15 0 R
+/F8 16 0 R
+/F9 17 0 R
+/F10 18 0 R
+/F11 19 0 R
+/F12 20 0 R
+/F13 21 0 R
+/F14 22 0 R
 >>
 /XObject <<
 >>
 >>
 endobj
-21 0 obj
+23 0 obj
 <<
 /Producer (jsPDF 4.2.1)
-/CreationDate (D:20260901215135-03'00')
+/CreationDate (D:20260902192140-03'00')
 >>
 endobj
-22 0 obj
+24 0 obj
 <<
 /Type /Catalog
 /Pages 1 0 R
@@ -1065,37 +1290,39 @@ endobj
 >>
 endobj
 xref
-0 23
+0 25
 0000000000 65535 f 
-0000020236 00000 n 
-0000022061 00000 n 
+0000025425 00000 n 
+0000027258 00000 n 
 0000000015 00000 n 
 0000000152 00000 n 
 0000010313 00000 n 
 0000010450 00000 n 
-0000020299 00000 n 
-0000020424 00000 n 
-0000020554 00000 n 
-0000020687 00000 n 
-0000020825 00000 n 
-0000020949 00000 n 
-0000021078 00000 n 
-0000021210 00000 n 
-0000021346 00000 n 
-0000021474 00000 n 
-0000021601 00000 n 
-0000021730 00000 n 
-0000021863 00000 n 
-0000021965 00000 n 
-0000022311 00000 n 
-0000022397 00000 n 
+0000021463 00000 n 
+0000021600 00000 n 
+0000025494 00000 n 
+0000025619 00000 n 
+0000025750 00000 n 
+0000025884 00000 n 
+0000026022 00000 n 
+0000026146 00000 n 
+0000026275 00000 n 
+0000026407 00000 n 
+0000026543 00000 n 
+0000026671 00000 n 
+0000026798 00000 n 
+0000026927 00000 n 
+0000027060 00000 n 
+0000027162 00000 n 
+0000027510 00000 n 
+0000027596 00000 n 
 trailer
 <<
-/Size 23
-/Root 22 0 R
-/Info 21 0 R
-/ID [ <169B084C90F43DC761A38671B9A05D93> <169B084C90F43DC761A38671B9A05D93> ]
+/Size 25
+/Root 24 0 R
+/Info 23 0 R
+/ID [ <657124F19024F5929993DFD1D54FE815> <657124F19024F5929993DFD1D54FE815> ]
 >>
 startxref
-22501
+27700
 %%EOF

@@ -35,7 +35,7 @@ function addSectionTitle(title) {
   doc.setFontSize(11);
   doc.setTextColor(15, 23, 42); // slate-900
   doc.text(title.toUpperCase(), margin, y);
-  
+
   y += 2;
   doc.setDrawColor(203, 213, 225); // slate-300
   doc.setLineWidth(0.4);
@@ -48,18 +48,18 @@ function addJobHeader(title, company, period, modality) {
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(10);
   doc.setTextColor(30, 41, 59); // slate-800
-  
+
   const leftText = `${title} | ${company}`;
   const rightText = `${period}${modality ? ' • ' + modality : ''}`;
-  
+
   doc.text(leftText, margin, y);
-  
+
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(9);
   doc.setTextColor(100, 116, 139); // slate-500
   const rightWidth = doc.getTextWidth(rightText);
   doc.text(rightText, pageWidth - margin - rightWidth, y);
-  
+
   y += 5;
 }
 
@@ -68,9 +68,9 @@ function addBulletPoint(text) {
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(9);
   doc.setTextColor(51, 65, 85); // slate-700
-  
+
   doc.text('•', margin + 2, y);
-  
+
   const splitText = doc.splitTextToSize(text, contentWidth - 8);
   doc.text(splitText, margin + 7, y);
   y += (splitText.length * 4.2) + 1.5;
@@ -124,11 +124,11 @@ skillsData.forEach(item => {
   doc.setFontSize(9);
   doc.setTextColor(30, 41, 59);
   doc.text(item.label, margin, y);
-  
+
   const labelWidth = doc.getTextWidth(item.label) + 2;
   doc.setFont('helvetica', 'normal');
   doc.setTextColor(71, 85, 105);
-  
+
   const splitVal = doc.splitTextToSize(item.val, contentWidth - labelWidth);
   doc.text(splitVal, margin + labelWidth, y);
   y += (splitVal.length * 4.2) + 1;
@@ -213,27 +213,84 @@ doc.setTextColor(71, 85, 105);
 doc.text('Universidade de Araraquara (Uniara)', margin, y);
 y += 6;
 
-// ==================== PROJETOS RELEVANTES ====================
-addSectionTitle('Projetos Relevantes');
+// ==================== PROJETOS DE ENGENHARIA & DESENVOLVIMENTO ====================
+addSectionTitle('Projetos de Engenharia & Desenvolvimento');
 
 const relevantProjects = [
-  { title: 'Gestão de Estoque e Vendas (Python/Django)', desc: 'Sistema de gestão de estoque e controle de vendas com fluxo de caixa e dashboard de visualização. Em produção.' },
-  { title: 'Portal Institucional em Drupal 9', desc: 'Portal institucional com módulos personalizados, tipos de conteúdo e views configuráveis; integração com APIs externas e cache para performance.' },
-  { title: 'Intranet Corporativa (Drupal)', desc: 'Intranet com autenticação LDAP integrada ao Active Directory; dashboard administrativo, permissões e módulos de comunicados e documentos.' },
-  { title: 'CRM Customizado – Microsoft Dynamics 365', desc: 'Plugins e APIs para o módulo de Vendas, com automação de cálculos, integração via Power Automate e revalidação de promoções em tempo real.' },
-  { title: 'Plataforma de Monitoramento de Ambientes Embarcados (Python/Django)', desc: 'Microsserviços para coleta e análise de dados embarcados, com integração em tempo real via MQTT e REST API; deploy contínuo com Docker e Jenkins.' },
-  { title: 'Automação de Fluxos de Aprovação (Power Automate)', desc: 'Fluxos integrando Dynamics 365, SharePoint e Outlook para aprovação de propostas comerciais, reduzindo o tempo de aprovação em 40%.' },
-  { title: 'Sistema de Gestão de Chamados Técnicos (Laravel)', desc: 'Sistema com autenticação, níveis de permissão e PostgreSQL; relatórios de SLA e painéis de acompanhamento de tickets.' }
+  {
+    title: 'SaaS de Gestão Empresarial (ERP Cloud Multi-tenant)',
+    stack: 'Python, Django REST, React, PostgreSQL, Redis, Docker, Celery, BrasilAPI',
+    desc: 'Plataforma multi-tenant com isolamento lógico de dados, importação automática de NF-e/XML com decodificação de chave de 44 dígitos, módulo fiscal com regimes tributários, controle de estoque auditado, emissão de pedidos PDV e fluxo de caixa.',
+    github: 'https://github.com/isaiasvas/SaaS-de-Gest-o-Empresarial'
+  },
+  {
+    title: 'Plataforma de Monitoramento IoT',
+    stack: 'Python, Django, Django REST Framework, MQTT, PostgreSQL, Docker, WebSockets, TimescaleDB',
+    desc: 'Sistema distribuído para ingestão e telemetria contínua de sensores em tempo real via broker MQTT, motor de regras para disparo de alertas e dashboards de supervisão temporal.'
+  },
+  {
+    title: 'Sistema de Service Desk & Suporte Corporativo',
+    stack: 'Python, Django, Django REST Framework, PostgreSQL, Docker, Postman, Bootstrap',
+    desc: 'Central de incidentes e requisições de TI com triagem categorizada, controle visual de matriz de prioridades, monitoramento de SLAs e histórico auditável de chamados.'
+  },
+  {
+    title: 'Plataforma LMS (Ambiente Virtual de Aprendizagem)',
+    stack: 'Python, Django, Django REST Framework, PostgreSQL, Docker, JavaScript, HTML5/CSS3',
+    desc: 'Ambiente educacional modular com trilhas pedagógicas, módulos de aulas em vídeo/texto, exercícios interativos com correção automática e emissão autenticada de certificados.'
+  },
+  {
+    title: 'ERP Comercial & Varejo',
+    stack: 'PHP, Laravel 11, PostgreSQL, Redis, Docker, Tailwind CSS, Alpine.js',
+    desc: 'Gestão unificada do ciclo comercial: cadastro de clientes/fornecedores, pedidos de venda, ordens de compra, controle de estoque com ponto de ressuprimento e fluxo de caixa.'
+  },
+  {
+    title: 'Sistema de Help Desk & Gestão de SLA',
+    stack: 'PHP, Laravel, PostgreSQL, Docker, REST API, Tailwind CSS, Redis',
+    desc: 'Plataforma de suporte com filas de trabalho departamentais, controle e alertas de estouro de SLA, múltiplos anexos e relatórios gerenciais de desempenho.'
+  },
+  {
+    title: 'Plataforma de Eventos & Credenciamento Digital',
+    stack: 'PHP, Laravel, PostgreSQL, Tailwind CSS, JavaScript, QR Code Engine',
+    desc: 'Sistema de publicação de eventos e congressos, gestão de inscrições por lotes de ingressos, emissão de vouchers com QR Code e check-in instantâneo via câmera.'
+  },
+  {
+    title: 'SaaS de Governança de Contratos',
+    stack: 'PHP, Laravel, PostgreSQL, Docker, Tailwind CSS, Redis, Cron Scheduler',
+    desc: 'Governança e administração de contratos corporativos, alertas preventivos de vencimentos de vigência, versionamento de aditivos e fluxo formal de aprovações multinível.'
+  },
+  {
+    title: 'API de E-commerce com Microsserviços',
+    stack: 'Java, Spring Boot, Spring Security, Spring Cloud Gateway, PostgreSQL, Docker, JWT, OpenAPI',
+    desc: 'Ecossistema desacoplado de microsserviços com API Gateway, autenticação centralizada JWT, catálogo, estoque, ciclo de vida de pedidos e integração de pagamentos.'
+  },
+  {
+    title: 'Sistema Financeiro & Banking API',
+    stack: 'Java, Spring Boot, Spring Security, Spring Data JPA, PostgreSQL, Docker, JWT, JUnit/Mockito',
+    desc: 'API bancária transacional com isolamento de contas correntes, transferências com bloqueio atômico contra saldo negativo, extratos detalhados e trilhas de auditoria imutáveis.'
+  }
 ];
 
 relevantProjects.forEach(proj => {
-  checkPageBreak(12);
+  checkPageBreak(16);
   doc.setFont('helvetica', 'bold');
-  doc.setFontSize(9);
+  doc.setFontSize(9.5);
   doc.setTextColor(30, 41, 59);
   doc.text(proj.title, margin, y);
   y += 4;
+
+  doc.setFont('helvetica', 'bold');
+  doc.setFontSize(8.5);
+  doc.setTextColor(12, 142, 233); // Brand accent
+  doc.text('Stack: ', margin + 2, y);
+  const stackLabelWidth = doc.getTextWidth('Stack: ');
+  doc.setFont('helvetica', 'normal');
+  doc.setTextColor(71, 85, 105);
+  const splitStack = doc.splitTextToSize(proj.stack, contentWidth - stackLabelWidth - 4);
+  doc.text(splitStack, margin + 2 + stackLabelWidth, y);
+  y += (splitStack.length * 3.8) + 1.5;
+
   addBulletPoint(proj.desc);
+  y += 1;
 });
 
 // Output
