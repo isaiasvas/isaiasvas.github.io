@@ -1,5 +1,6 @@
 import React from 'react';
-import { ArrowUpRight, Layers, Clock, Code, Shield } from 'lucide-react';
+import { ArrowUpRight, Layers, Clock, Code, Shield, CheckCircle2 } from 'lucide-react';
+import { GithubIcon } from './SocialIcons';
 
 export default function ProjectCard({ project, onSelect }) {
   const getCategoryIcon = (category) => {
