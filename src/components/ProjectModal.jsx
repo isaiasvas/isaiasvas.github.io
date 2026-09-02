@@ -1,24 +1,43 @@
 import React, { useEffect } from 'react';
-import { X, Layers, Cpu, CheckCircle2, AlertCircle, Clock, ExternalLink } from 'lucide-react';
-import { GithubIcon } from './SocialIcons';
+import { X, Cpu, CheckCircle2, AlertCircle, Clock } from 'lucide-react';
 
 export default function ProjectModal({ project, onClose }) {
-  if (!project) return null;
-
-  // Close on Escape key and lock body scroll
+  // Always invoke hooks at top level
   useEffect(() => {
+    if (!project) return;
+
     const handleKeyDown = (e) => {
-      if (e.key === 'Escape') onClose();
+      if (e.key === 'Escape') {
+        onClose();
+      }
     };
 
+    // Save previous overflow state
+    const prevBodyOverflow = document.body.style.overflow;
+    const prevHtmlOverflow = document.documentElement.style.overflow;
+
     document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
     window.addEventListener('keydown', handleKeyDown);
 
     return () => {
-      document.body.style.overflow = '';
+      // Reliable cleanup
+      document.body.style.overflow = prevBodyOverflow || '';
+      document.documentElement.style.overflow = prevHtmlOverflow || '';
+      document.body.style.removeProperty('overflow');
+      document.documentElement.style.removeProperty('overflow');
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [onClose]);
+  }, [project, onClose]);
+
+  if (!project) return null;
+
+  const handleClose = () => {
+    // Explicitly restore scroll before calling onClose
+    document.body.style.removeProperty('overflow');
+    document.documentElement.style.removeProperty('overflow');
+    onClose();
+  };
 
   return (
     <div
@@ -29,7 +48,7 @@ export default function ProjectModal({ project, onClose }) {
     >
       {/* Backdrop */}
       <div
-        onClick={onClose}
+        onClick={handleClose}
         className="fixed inset-0 bg-slate-950/75 backdrop-blur-sm transition-opacity animate-fade-in"
       />
 
@@ -57,7 +76,7 @@ export default function ProjectModal({ project, onClose }) {
           </div>
 
           <button
-            onClick={onClose}
+            onClick={handleClose}
             type="button"
             className="p-2 rounded-xl text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-500"
             aria-label="Fechar janela de detalhes"
@@ -142,7 +161,7 @@ export default function ProjectModal({ project, onClose }) {
           </span>
 
           <button
-            onClick={onClose}
+            onClick={handleClose}
             type="button"
             className="px-5 py-2.5 rounded-xl bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 text-xs font-semibold transition-colors"
           >

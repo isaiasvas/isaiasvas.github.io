@@ -8,6 +8,7 @@ import Projects from './components/Projects';
 import Education from './components/Education';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 import { useTheme } from './hooks/useTheme';
 import { useActiveSection } from './hooks/useActiveSection';
 
@@ -36,6 +37,9 @@ export default function App() {
         <Education />
         <Contact />
       </main>
+
+      {/* Floating WhatsApp Action Button */}
+      <WhatsAppButton />
 
       {/* Footer */}
       <Footer />

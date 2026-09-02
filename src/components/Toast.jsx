@@ -8,7 +8,7 @@ export default function Toast({ message, isVisible, onClose }) {
     <div
       role="status"
       aria-live="polite"
-      className="fixed bottom-6 right-6 z-50 flex items-center gap-3 px-4 py-3 rounded-xl 
+      className="fixed bottom-24 right-6 sm:bottom-6 sm:left-6 sm:right-auto z-50 flex items-center gap-3 px-4 py-3 rounded-xl 
         bg-slate-900 text-white dark:bg-white dark:text-slate-900 shadow-2xl border border-slate-700/40 
         dark:border-slate-200 animate-fade-up text-sm font-medium"
     >
