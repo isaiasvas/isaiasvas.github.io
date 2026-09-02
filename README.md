@@ -218,8 +218,8 @@ portfolio/
 
 ### 1. Clonar o Repositório
 ```bash
-git clone https://github.com/isaiasvas/portfolio.git
-cd portfolio
+git clone https://github.com/isaiasvas/isaiasvas.github.io.git
+cd isaiasvas.github.io
 ```
 
 ### 2. Instalar as Dependências
@@ -253,14 +253,14 @@ npm run generate-pdf
 
 ## 🚀 Publicação e Deploy no GitHub Pages
 
-O projeto já está 100% configurado com **GitHub Actions** em `.github/workflows/deploy.yml` e com base relativa em `vite.config.js` (`base: './'`), funcionando perfeitamente em `https://isaiasvas.github.io/` ou em `https://isaiasvas.github.io/portfolio/`.
+O projeto já está 100% configurado com **GitHub Actions** em `.github/workflows/deploy.yml` e com base relativa em `vite.config.js` (`base: './'`), funcionando perfeitamente como **User Page** em `https://isaiasvas.github.io/`.
 
 ### Passo a Passo para Publicar:
 
-1. Crie o repositório no seu GitHub com o nome desejado (ex: `portfolio` ou `isaiasvas.github.io`).
+1. Crie o repositório no seu GitHub com o nome exato `isaiasvas.github.io`.
 2. Conecte seu repositório local e envie os commits:
    ```bash
-   git remote add origin https://github.com/isaiasvas/portfolio.git
+   git remote set-url origin https://github.com/isaiasvas/isaiasvas.github.io.git
    git push -u origin main
    ```
 3. Acesse o seu repositório no GitHub:
