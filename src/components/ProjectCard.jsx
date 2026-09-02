@@ -42,8 +42,16 @@ export default function ProjectCard({ project, onSelect }) {
             {project.category}
           </span>
 
-          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-medium font-mono bg-slate-900/10 dark:bg-black/30 text-slate-700 dark:text-slate-300 backdrop-blur-sm border border-slate-300/40 dark:border-slate-700/40">
-            <Clock className="w-3 h-3 text-amber-500" />
+          <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-medium font-mono backdrop-blur-sm border ${
+            project.status === 'Concluído'
+              ? 'bg-emerald-500/15 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border-emerald-500/30'
+              : 'bg-slate-900/10 dark:bg-black/30 text-slate-700 dark:text-slate-300 border-slate-300/40 dark:border-slate-700/40'
+          }`}>
+            {project.status === 'Concluído' ? (
+              <CheckCircle2 className="w-3 h-3 text-emerald-500" />
+            ) : (
+              <Clock className="w-3 h-3 text-amber-500" />
+            )}
             {project.status}
           </span>
         </div>
@@ -93,7 +101,7 @@ export default function ProjectCard({ project, onSelect }) {
         </div>
 
         {/* Card Footer Actions */}
-        <div className="pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+        <div className="pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between gap-2">
           <button
             onClick={() => onSelect(project)}
             type="button"
@@ -103,9 +111,23 @@ export default function ProjectCard({ project, onSelect }) {
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </button>
 
-          <span className="text-[11px] font-mono text-slate-400 dark:text-slate-500">
-            Roadmap
-          </span>
+          {project.github ? (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-900 dark:bg-slate-800 hover:bg-slate-800 dark:hover:bg-slate-700 text-white border border-slate-700/60 shadow-sm transition-all hover:scale-105 active:scale-95"
+              title="Acessar Repositório no GitHub"
+            >
+              <GithubIcon className="w-3.5 h-3.5" />
+              <span>GitHub</span>
+            </a>
+          ) : (
+            <span className="text-[11px] font-mono text-slate-400 dark:text-slate-500">
+              Roadmap
+            </span>
+          )}
         </div>
       </div>
     </article>
