@@ -83,18 +83,5 @@ export const skillsData = [
       { name: "Application Insights" },
       { name: "PowerApps" }
     ]
-  },
-  {
-    category: "Infraestrutura & Redes",
-    description: "Administração de servidores, segurança e políticas corporativas.",
-    icon: "Network",
-    skills: [
-      { name: "Linux", highlight: true },
-      { name: "Active Directory (AD)", highlight: true },
-      { name: "GPO (Group Policies)", highlight: true },
-      { name: "SAMBA" },
-      { name: "Roteamento & Switches" },
-      { name: "Segurança da Informação" }
-    ]
   }
 ];
