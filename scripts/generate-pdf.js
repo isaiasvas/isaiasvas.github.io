@@ -92,7 +92,7 @@ y += 5.5;
 doc.setFont('helvetica', 'normal');
 doc.setFontSize(9);
 doc.setTextColor(100, 116, 139);
-doc.text('Araraquara – SP • isaias@visioit.com.br • +55 (16) 99750-5196 • linkedin.com/in/isaiasvasilva • github.com/isaiasvas', margin, y);
+doc.text('Araraquara – SP • isaiasvitordealmeidasilva@gmail.com • +55 (16) 99750-5196 • linkedin.com/in/isaiasvasilva • github.com/isaiasvas', margin, y);
 y += 5;
 
 // ==================== PERFIL PROFISSIONAL ====================

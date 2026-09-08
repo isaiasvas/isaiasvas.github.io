@@ -40,7 +40,7 @@ export default function Contact() {
           </div>
 
           <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-3">
-            isaias@visioit.com.br
+            {profileData.email}
           </h3>
 
           <p className="max-w-xl text-sm sm:text-base text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">

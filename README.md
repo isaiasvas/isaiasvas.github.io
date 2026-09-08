@@ -5,7 +5,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-isaiasvasilva-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/isaiasvasilva)
 [![GitHub](https://img.shields.io/badge/GitHub-isaiasvas-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/isaiasvas)
-[![Email](https://img.shields.io/badge/Email-isaias%40visioit.com.br-0C8EE9?style=for-the-badge&logo=gmail&logoColor=white)](mailto:isaias@visioit.com.br)
+[![Email](https://img.shields.io/badge/Email-isaiasvitordealmeidasilva%40gmail.com-0C8EE9?style=for-the-badge&logo=gmail&logoColor=white)](mailto:isaiasvitordealmeidasilva@gmail.com)
 [![Portfólio Online](https://img.shields.io/badge/Live_Demo-GitHub_Pages-22c55e?style=for-the-badge&logo=githubpages&logoColor=white)](https://isaiasvas.github.io/)
 
 <p align="center">
@@ -274,7 +274,7 @@ O projeto já está 100% configurado com **GitHub Actions** em `.github/workflow
 
 Fique à vontade para entrar em contato para novas oportunidades, consultoria técnica ou projetos:
 
-- 📧 **E-mail:** [isaias@visioit.com.br](mailto:isaias@visioit.com.br)
+- 📧 **E-mail:** [isaiasvitordealmeidasilva@gmail.com](mailto:isaiasvitordealmeidasilva@gmail.com)
 - 💼 **LinkedIn:** [linkedin.com/in/isaiasvasilva](https://linkedin.com/in/isaiasvasilva)
 - 🐙 **GitHub:** [github.com/isaiasvas](https://github.com/isaiasvas)
 - 📍 **Localização:** Araraquara – SP, Brasil

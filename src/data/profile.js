@@ -3,7 +3,7 @@ export const profileData = {
   role: "Full Stack Developer",
   headline: "Desenvolvedor Full Stack & Docente de Tecnologia",
   location: "Araraquara – SP, Brasil",
-  email: "isaias@visioit.com.br",
+  email: "isaiasvitordealmeidasilva@gmail.com",
   phone: "+55 (16) 99750-5196",
   github: "https://github.com/isaiasvas",
   githubUsername: "isaiasvas",
