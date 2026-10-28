@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ArrowRight, Download, Terminal, ChevronDown } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './SocialIcons';
 import { profileData } from '../data/profile';
+import { trackResumeDownload } from '../utils/webhook';
 
 export default function Hero() {
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
@@ -84,6 +85,7 @@ export default function Hero() {
           <a
             href={profileData.pdfResumeUrl}
             download="curriculo-isaias-silva.pdf"
+            onClick={() => trackResumeDownload('hero')}
             className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white dark:bg-dark-surface hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-800 dark:text-slate-100 font-semibold text-sm sm:text-base border border-slate-200 dark:border-slate-700 shadow-sm transition-all transform hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-slate-400"
           >
             <Download className="w-4 h-4 text-brand-500" />

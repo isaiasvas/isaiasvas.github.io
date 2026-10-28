@@ -229,9 +229,10 @@ const relevantProjects = [
     desc: 'Sistema distribuído para ingestão e telemetria contínua de sensores em tempo real via broker MQTT, motor de regras para disparo de alertas e dashboards de supervisão temporal.'
   },
   {
-    title: 'Sistema de Service Desk & Suporte Corporativo',
+    title: 'Sistema de Service Desk',
     stack: 'Python, Django, Django REST Framework, PostgreSQL, Docker, Postman, Bootstrap',
-    desc: 'Central de incidentes e requisições de TI com triagem categorizada, controle visual de matriz de prioridades, monitoramento de SLAs e histórico auditável de chamados.'
+    desc: 'Central de incidentes e requisições de TI com triagem categorizada, controle visual de matriz de prioridades, monitoramento de SLAs e histórico auditável de chamados.',
+    github: 'https://github.com/isaiasvas/Sistema-de-Service-Desk'
   },
   {
     title: 'Plataforma LMS (Ambiente Virtual de Aprendizagem)',
