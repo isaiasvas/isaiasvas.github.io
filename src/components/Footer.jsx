@@ -2,7 +2,6 @@ import React from 'react';
 import { ArrowUp, Mail, FileText } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './SocialIcons';
 import { profileData } from '../data/profile';
-import { trackResumeDownload } from '../utils/webhook';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -61,7 +60,6 @@ export default function Footer() {
             <a
               href={profileData.pdfResumeUrl}
               download="curriculo-isaias-silva.pdf"
-              onClick={() => trackResumeDownload('footer')}
               className="p-2 rounded-xl text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-all"
               aria-label="Baixar Currículo em PDF"
               title="Baixar Currículo PDF"

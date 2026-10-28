@@ -10,10 +10,9 @@ export const profileData = {
   linkedin: "https://linkedin.com/in/isaiasvasilva",
   linkedinUsername: "isaiasvasilva",
   pdfResumeUrl: "./curriculo-isaias-silva.pdf",
-  webhookUrl: "https://webhook.site/5f77f3af-3e92-4f72-8f7a-54605fcbfbef",
-
+  
   heroDescription: "Construindo aplicações web escaláveis, APIs robustas e soluções corporativas de missão crítica com PHP, Python e JavaScript, aliando rigor arquitetural ao compartilhamento de conhecimento.",
-
+  
   rotatingPhrases: [
     "PHP / Laravel",
     "Python / Django",
