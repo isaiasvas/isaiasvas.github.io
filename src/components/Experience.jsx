@@ -8,9 +8,9 @@ export default function Experience() {
     <section id="experience" className="no-print py-20 md:py-28 bg-slate-50 dark:bg-dark-bg relative">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          badge="Carreira Profissional (Fórmula STAR / XYZ)"
-          title="Experiência Profissional"
-          subtitle="Histórico de impacto em engenharia de software, sustentação de microsserviços críticos (Petrobras), ecossistema Microsoft e docência técnica."
+          badge="Carreira Profissional"
+          title="Experiência & Trajetória"
+          subtitle="Histórico de atuação em engenharia de software, sustentação de microsserviços críticos (Petrobras), ecossistema Microsoft e docência técnica."
         />
 
         <div className="relative border-l-2 border-slate-200 dark:border-slate-800 ml-4 md:ml-6 space-y-12">

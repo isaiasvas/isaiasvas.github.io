@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowRight, FileText, Terminal, ChevronDown, Download } from 'lucide-react';
+import { ArrowRight, Terminal, ChevronDown, Download } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './SocialIcons';
 import { profileData } from '../data/profile';
 
@@ -34,12 +34,12 @@ export default function Hero() {
           <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
           <span className="font-semibold text-slate-900 dark:text-white">Disponível</span>
           <span className="text-slate-400 dark:text-slate-600">•</span>
-          <span>Engenharia Full Stack Sênior, Tech Lead &amp; Consultoria</span>
+          <span>Projetos, Engenharia Sênior &amp; Consultoria</span>
         </div>
 
         {/* Intro */}
         <p className="text-sm sm:text-base font-mono uppercase tracking-widest text-[#0F2D5A] dark:text-brand-400 font-semibold mb-3 animate-fade-up">
-          Engenharia de Software Corporativa &amp; Missão Crítica
+          Olá, eu sou
         </p>
 
         {/* Main Name Heading */}
@@ -74,21 +74,20 @@ export default function Hero() {
         {/* Action CTAs */}
         <div className="flex flex-wrap items-center justify-center gap-3.5 mb-12 animate-fade-up">
           <a
-            href="#resume"
+            href="#projects"
             className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#0F2D5A] hover:bg-[#163d77] dark:bg-brand-600 dark:hover:bg-brand-500 text-white font-semibold text-sm sm:text-base shadow-lg shadow-brand-900/15 transition-all transform hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 dark:focus:ring-offset-dark-bg"
           >
-            <FileText className="w-4 h-4" />
-            <span>Currículo Interativo (ATS Pro)</span>
+            <span>Ver Projetos</span>
             <ArrowRight className="w-4 h-4" />
           </a>
 
           <a
             href={profileData.pdfResumeUrl}
-            download="Curriculo_Isaias_Silva_ATS_Pro.pdf"
+            download="curriculo-isaias-silva.pdf"
             className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white dark:bg-dark-surface hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-800 dark:text-slate-100 font-semibold text-sm sm:text-base border border-slate-200 dark:border-slate-700 shadow-xs transition-all transform hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-slate-400"
           >
             <Download className="w-4 h-4 text-brand-500" />
-            <span>Baixar PDF Oficial</span>
+            <span>Baixar Currículo</span>
           </a>
 
           <div className="flex items-center gap-2">

@@ -59,7 +59,7 @@ export default function Footer() {
 
             <a
               href={profileData.pdfResumeUrl}
-              download="Curriculo_Isaias_Silva_ATS_Pro.pdf"
+              download="curriculo-isaias-silva.pdf"
               className="p-2 rounded-xl text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-all"
               aria-label="Baixar Currículo em PDF"
               title="Baixar Currículo PDF"
@@ -84,7 +84,7 @@ export default function Footer() {
         <div className="mt-8 pt-8 border-t border-slate-100 dark:border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500 dark:text-slate-400 font-normal">
           <p>© {currentYear} Isaias Silva. Todos os direitos reservados.</p>
           <p className="font-mono text-[11px]">
-            Suíte Otimizador ATS Pro • React, Tailwind CSS &amp; Schema.org GEO
+            Hospedado no GitHub Pages • Projetado com React &amp; Tailwind CSS
           </p>
         </div>
       </div>
