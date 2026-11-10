@@ -3,26 +3,33 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-brand-50: #f0f7ff;
-  --color-brand-100: #e0effe;
-  --color-brand-200: #bae0fd;
-  --color-brand-300: #7cc8fc;
-  --color-brand-400: #36abf7;
+  --color-brand-50: #f0f6ff;
+  --color-brand-100: #e0edfe;
+  --color-brand-200: #badbfc;
+  --color-brand-300: #7cc0fa;
+  --color-brand-400: #36a1f5;
   --color-brand-500: #0c8ee9;
   --color-brand-600: #0270c7;
   --color-brand-700: #0359a1;
-  --color-brand-800: #074c84;
-  --color-brand-900: #0c3f6e;
-  --color-brand-950: #082849;
+  --color-brand-800: #0F2D5A;
+  --color-brand-900: #0c2447;
+  --color-brand-950: #071730;
 
-  --color-dark-bg: #080c14;
-  --color-dark-surface: #0f1726;
-  --color-dark-card: #141e33;
-  --color-dark-border: #1f2d47;
-  --color-dark-muted: #8e9eb5;
+  --color-dark-bg: #070b12;
+  --color-dark-surface: #0d1422;
+  --color-dark-card: #121b2e;
+  --color-dark-border: #1e2c46;
+  --color-dark-muted: #94a3b8;
 
-  --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+  --font-sans: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+:root {
+  --ats-navy: #0F2D5A;
+  --ats-heading-text: #1E1E1E;
+  --ats-body-text: #282828;
+  --ats-subtitle-text: #464646;
 }
 
 @layer base {
@@ -61,7 +68,7 @@
 }
 
 .bg-grid-pattern-light {
-  background-image: radial-gradient(rgba(15, 23, 42, 0.08) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(15, 45, 90, 0.08) 1px, transparent 1px);
   background-size: 24px 24px;
 }
 
@@ -71,11 +78,11 @@
 }
 
 .shadow-card-light {
-  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.03);
 }
 
 .shadow-card-dark {
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
 @keyframes fadeIn {
@@ -84,16 +91,16 @@
 }
 
 @keyframes fadeUp {
-  0% { opacity: 0; transform: translateY(24px); }
+  0% { opacity: 0; transform: translateY(20px); }
   100% { opacity: 1; transform: translateY(0); }
 }
 
 .animate-fade-in {
-  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: fadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .animate-fade-up {
-  animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -104,5 +111,65 @@
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* ==========================================================================
+   FOLHA DE IMPRESSÃO NATIVA ATS-READY (@media print)
+   Idêntica ao Curriculo_Isaias_Silva_ATS_Pro.docx (Margens 0.6in, Coluna Única)
+   ========================================================================== */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0.6in 0.65in;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #282828 !important;
+    font-size: 9.5pt !important;
+    line-height: 1.38 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide all website UI sections except the main container and #resume section */
+  .no-print,
+  header.site-header,
+  footer.site-footer,
+  section#hero,
+  section#about,
+  section#experience,
+  section#skills,
+  section#projects,
+  section#education,
+  section#contact {
+    display: none !important;
+  }
+
+  section#resume {
+    padding: 0 !important;
+    margin: 0 !important;
+    background: #ffffff !important;
+    border: none !important;
+  }
+
+  #ats-resume-sheet {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+    color: #282828 !important;
+  }
+
+  #ats-resume-sheet a {
+    text-decoration: none !important;
   }
 }

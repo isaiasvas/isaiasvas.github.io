@@ -1,103 +1,87 @@
 export const experienceData = [
   {
-    id: "senac-docente",
-    role: "Docente de Informática",
-    company: "SENAC",
-    period: "2025 – Atual",
-    modality: "Presencial",
-    location: "Araraquara, SP",
-    type: "Educação & Tecnologia",
-    description: "Ministra aulas práticas e integradas conectando exigências do mercado a fundamentos sólidos de engenharia de software e infraestrutura.",
-    activities: [
-      "Aulas de Infraestrutura de Redes, Desenvolvimento Web e Lógica de Programação, com foco em empregabilidade.",
-      "Aplicação das trilhas técnicas de Desenvolvimento de Sistemas (análise, modelagem, POO, UX/UI, banco de dados, segurança, testes e versionamento).",
-      "Condução de projetos integradores práticos simulando desafios do mercado corporativo de TI.",
-      "Ensino de Informática para Internet e Programação de Jogos Digitais com Unity."
-    ],
-    skills: ["Desenvolvimento Web", "Lógica de Programação", "POO", "Redes & Infra", "UX/UI", "Banco de Dados", "Git", "Segurança"]
-  },
-  {
     id: "simworx-fullstack",
-    role: "Desenvolvedor Full Stack",
-    company: "Simworx",
-    period: "2025 – Atual",
+    role: "Desenvolvedor Full Stack Sênior",
+    company: "Simworx (Cliente: Petrobras)",
+    period: "2025 - Presente",
     modality: "Home Office",
     location: "Brasil",
     type: "Missão Crítica & Óleo e Gás",
-    description: "Prestação de serviço técnico especializado para operações da Petrobras, atuando em microsserviços, aplicações embarcadas e sistemas corporativos.",
+    description:
+      "Atuação sênior em engenharia de microsserviços, sustentação crítica e refatoração evolutiva para operações de alta disponibilidade da Petrobras.",
     activities: [
-      "Manutenção, correção e evolução de microsserviços e aplicações modernas e legadas.",
-      "Desenvolvimento de back-end robusto e escalável em Python com Django para ambientes embarcados.",
-      "Implementação de interfaces frontend reativas e responsivas com React integradas via APIs RESTful.",
-      "Automação de ambientes de desenvolvimento com Docker e pipelines de CI/CD com Jenkins.",
-      "Atuação em time ágil Scrum com sprints quinzenais, planning, reviews e retrospectivas."
+      "Engenharia de Microsserviços e Sustentação Crítica: Atua no desenvolvimento, manutenção evolutiva e refatoração de microsserviços em Python (Django/DRF) voltados para ambientes operacionais de alta criticidade da Petrobras, assegurando alta disponibilidade e integridade transacional.",
+      "Desenvolvimento Frontend Reativo: Constrói interfaces dinâmicas em React integradas a endpoints RESTful de telemetria e operação, reduzindo o tempo de carregamento de visualizações analíticas.",
+      "Padronização de Ambientes & DevOps: Conteinerizou stacks de desenvolvimento e homologação utilizando Docker e Docker Compose, eliminando divergências de ambiente entre equipes e reduzindo o tempo de onboarding técnico.",
+      "Automação de CI/CD: Mantém pipelines automatizados de integração e entrega contínua com Jenkins e Git, viabilizando deploys sem downtime sob metodologia ágil Scrum (sprints quinzenais)."
     ],
-    skills: ["Python", "Django", "React", "REST APIs", "Docker", "Jenkins", "Git", "CI/CD", "Scrum", "Microsserviços"]
+    skills: ["Python 3", "Django / DRF", "React", "APIs RESTful", "Docker", "Docker Compose", "Jenkins", "Git", "CI/CD", "Scrum", "Microsserviços"]
+  },
+  {
+    id: "senac-docente",
+    role: "Docente de Tecnologia da Informação",
+    company: "SENAC São Paulo",
+    period: "2025 - Presente",
+    modality: "Presencial",
+    location: "Araraquara, SP",
+    type: "Educação & Liderança Técnica",
+    description:
+      "Formação técnica e liderança pedagógica conectando arquitetura de software, Clean Code e práticas de squads ágeis ao mercado de TI.",
+    activities: [
+      "Formação Técnica e Liderança Pedagógica: Ministra disciplinas práticas das trilhas de Desenvolvimento de Sistemas (POO, Arquitetura MVC, UX/UI, Modelagem de Banco de Dados, Segurança e Testes) e Infraestrutura de Redes para mais de 60 alunos por módulo.",
+      "Orientação de Projetos Integradores de Mercado: Coordena projetos práticos interdisciplinares que reproduzem rotinas reais de squads ágeis corporativas, orientando arquitetura em Git/GitHub, Clean Code e padrões de entrega profissional."
+    ],
+    skills: ["POO", "Arquitetura MVC", "Clean Code", "Modelagem de Dados", "UX/UI", "Segurança & Testes", "Git/GitHub", "Infraestrutura de Redes"]
   },
   {
     id: "pentare-fullstack",
-    role: "Desenvolvedor Full Stack",
-    company: "Pentare — Parceiro Microsoft",
+    role: "Desenvolvedor Full Stack / Especialista Dynamics 365",
+    company: "Pentare (Parceiro Microsoft)",
     period: "2025 (6 meses)",
     modality: "Home Office",
     location: "Brasil",
-    type: "Soluções Corporativas & Cloud",
-    description: "Desenvolvimento e customização do módulo CRM do Microsoft Dynamics 365 e soluções em nuvem na plataforma Azure.",
+    type: "Ecossistema Microsoft & Cloud Azure",
+    description:
+      "Arquitetura e implementação de plugins corporativos em C# (.NET), integrações CRM no Microsoft Dynamics 365 e governança cloud no Azure.",
     activities: [
-      "Customização de CRM Microsoft Dynamics 365, desenvolvendo plugins, Web APIs, webservices e webapps em C#.",
-      "Criação e orquestração de fluxos automatizados de processos de negócio com Power Automate.",
-      "Utilização do ecossistema Azure (Web Apps, Azure Key Vault, Application Insights) para hospedagem segura e telemetria.",
-      "Versionamento e integração contínua (CI/CD) via Azure DevOps (Repos e Pipelines)."
+      "Customização Avançada de CRM: Projetou e implementou plugins corporativos, Web APIs, webservices e microsserviços em C# (.NET) integrados ao Microsoft Dynamics 365, automatizando regras de faturamento e governança de pedidos.",
+      "Orquestração de Processos de Negócio: Desenvolveu fluxos complexos em Power Automate conectando múltiplos sistemas legados e APIs de terceiros (incluindo serviços fiscais e bancários via REST).",
+      "Gestão Cloud & Telemetria em Azure: Gerenciou provisionamento de Azure Web Apps, segregação de credenciais via Azure Key Vault e monitoramento de logs de auditoria e performance via Application Insights com versionamento no Azure DevOps."
     ],
-    skills: ["Microsoft Dynamics 365", "C#", "Plugins", "Power Automate", "Azure Web Apps", "Key Vault", "Application Insights", "Azure DevOps"]
+    skills: ["C# (.NET Core)", "Microsoft Dynamics 365", "Plugins & Web APIs", "Power Automate", "Azure Web Apps", "Azure Key Vault", "Application Insights", "Azure DevOps"]
   },
   {
     id: "visioit-fullstack",
-    role: "Desenvolvedor Full Stack",
+    role: "Tech Lead / Desenvolvedor Full Stack",
     company: "VisioIT",
-    period: "2020 – 2025",
+    period: "2020 - 2025",
     modality: "Home Office",
     location: "Brasil",
-    type: "Desenvolvimento Web & Integrações",
-    description: "Construção de aplicações corporativas, portais de conteúdo e microsserviços com foco em performance, escalabilidade e arquitetura limpa.",
+    type: "Liderança Técnica & Engenharia Web",
+    description:
+      "Liderança técnica na concepção de sistemas web corporativos, portais escaláveis em PHP e serviços de alta concorrência em Python.",
     activities: [
-      "Desenvolvimento de aplicações web em PHP com Laravel, Drupal e WordPress para sistemas corporativos e portais.",
-      "Construção de interfaces responsivas em JavaScript com React e Angular integradas a backends PHP.",
-      "Desenvolvimento de sistemas escaláveis em Python com Django sob princípios de arquitetura limpa.",
-      "Integração de APIs RESTful, testes e documentação com Postman, além de automação de ambientes com Docker e Git."
+      "Arquitetura e Desenvolvimento Web de Grande Porte: Liderou a concepção e implementação de sistemas web corporativos e portais de conteúdo escaláveis utilizando PHP (Laravel, Drupal 9 e WordPress), atendendo múltiplos clientes corporativos.",
+      "Interfaces Responsivas de Alta Performance: Construiu SPAs modulares e componentes frontend em JavaScript (React e Angular), garantindo compatibilidade multiplataforma, 100% de conformidade semântica e consumo otimizado de APIs RESTful.",
+      "Sistemas de Alta Escala em Python: Desenvolveu serviços de backend em Python (Django) estruturados sob Arquitetura Limpa, assegurando estabilidade em cenários de alta concorrência e alto volume de acessos.",
+      "Governança e Qualidade de Software: Padronizou coleções de testes e documentação de APIs com Postman, estabeleceu fluxo de versionamento Git com Gitflow e acelerou o ciclo de validação de entregas em até 30%."
     ],
-    skills: ["PHP", "Laravel", "Drupal", "WordPress", "Python", "Django", "React", "Angular", "APIs REST", "Docker", "Git"]
+    skills: ["PHP 8", "Laravel", "Drupal 9", "WordPress", "Python", "Django", "React", "Angular", "Clean Architecture", "Gitflow", "Docker", "Postman"]
   },
   {
     id: "sesc-suporte-1",
-    role: "Analista de Suporte Técnico I",
+    role: "Analista de Suporte Técnico I & Infraestrutura",
     company: "SESC Araraquara",
-    period: "2023 – 2024 (9 meses)",
+    period: "2023 - 2024",
     modality: "Presencial",
     location: "Araraquara, SP",
-    type: "Infraestrutura de TI",
-    description: "Gestão de infraestrutura de usuários, diretivas de segurança e suporte corporativo de redes e sistemas.",
+    type: "Infraestrutura Corporativa & Segurança",
+    description:
+      "Administração de infraestrutura crítica de rede, controle de acesso via Active Directory/GPO e gestão de incidentes com alta conformidade de SLA.",
     activities: [
-      "Administração de Active Directory (AD) e Group Policy Objects (GPO) para controle de permissões de rede.",
-      "Suporte técnico a usuários internos via sistema de chamados e atendimento remoto (hardware, software e rede).",
-      "Documentação de processos e monitoramento de métricas de atendimento para melhoria contínua."
+      "Gestão de Acessos & Rede Corporativa: Administrou infraestrutura Active Directory (AD) e Group Policy Objects (GPO), garantindo políticas de privilégio mínimo e segurança da informação para centenas de estações de trabalho.",
+      "Otimização de SLA e Resolução de Incidentes: Gerenciou fila de chamados de hardware, software e conectividade de rede com índice de conformidade de SLA superior a 95%, reduzindo retrabalho por meio de documentação técnica detalhada."
     ],
-    skills: ["Active Directory", "GPO", "Redes Corporativas", "Suporte Técnico", "Documentação", "Hardware & Software"]
-  },
-  {
-    id: "sesc-estagio",
-    role: "Estagiário – Analista de Suporte Técnico I",
-    company: "SESC Araraquara",
-    period: "2016 – 2017",
-    modality: "Presencial",
-    location: "Araraquara, SP",
-    type: "Infraestrutura & Redes",
-    description: "Início da trajetória prática em tecnologia com implantação de servidores, manutenção e cabeamento de rede.",
-    activities: [
-      "Implementação e administração de servidores SAMBA para compartilhamento seguro de arquivos em rede local.",
-      "Manutenção e configuração preventiva/corretiva de computadores, impressoras e periféricos.",
-      "Apoio na infraestrutura de TI, incluindo troca de switches gerenciáveis e montagem de racks de rede."
-    ],
-    skills: ["SAMBA", "Linux", "Switches & Racks", "Redes Locais", "Manutenção de Hardware", "Infraestrutura"]
+    skills: ["Active Directory (AD)", "GPO", "Segurança da Informação", "Gestão de SLA (>95%)", "Redes Corporativas", "Infraestrutura de TI"]
   }
 ];

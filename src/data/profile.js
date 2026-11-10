@@ -1,8 +1,8 @@
 export const profileData = {
   name: "Isaias Silva",
-  role: "Full Stack Developer",
-  headline: "Desenvolvedor Full Stack & Docente de Tecnologia",
-  location: "Araraquara – SP, Brasil",
+  role: "Desenvolvedor Full Stack Sênior | Tech Lead",
+  headline: "Desenvolvedor Full Stack Sênior | Tech Lead | Especialista PHP/Laravel & Python",
+  location: "Araraquara, SP",
   email: "isaiasvitordealmeidasilva@gmail.com",
   phone: "+55 (16) 99750-5196",
   github: "https://github.com/isaiasvas",
@@ -10,31 +10,32 @@ export const profileData = {
   linkedin: "https://linkedin.com/in/isaiasvasilva",
   linkedinUsername: "isaiasvasilva",
   pdfResumeUrl: "./curriculo-isaias-silva.pdf",
-  
-  heroDescription: "Construindo aplicações web escaláveis, APIs robustas e soluções corporativas de missão crítica com PHP, Python e JavaScript, aliando rigor arquitetural ao compartilhamento de conhecimento.",
-  
+
+  heroDescription:
+    "Mais de 8 anos de experiência em engenharia de software corporativa, arquitetura orientada a serviços e sistemas de missão crítica. Especialista em PHP (Laravel, Symfony) e Python (Django, FastAPI), sustentação de microsserviços para operações da Petrobras, soluções Microsoft (Dynamics 365 & Azure) e docência no SENAC.",
+
   rotatingPhrases: [
-    "PHP / Laravel",
-    "Python / Django",
-    "JavaScript / React / Angular",
-    "APIs REST & Microsserviços",
-    "Docker & CI/CD Pipelines",
-    "Microsoft Dynamics 365 & Azure",
-    "Docente de Tecnologia no SENAC"
+    "PHP 8 (POO, PSRs) & Laravel 10/11",
+    "Python 3 (Django, DRF & FastAPI)",
+    "Tech Lead & Arquitetura de Microsserviços",
+    "JavaScript / TypeScript / React & Angular",
+    "Docker, Jenkins & Azure DevOps CI/CD",
+    "Microsoft Dynamics 365 & Cloud Azure",
+    "Docente de Tecnologia no SENAC SP"
   ],
 
   about: {
-    lead: "Desenvolvedor Full Stack com sólida trajetória em tecnologia iniciada em 2016 e atuação profissional contínua desde 2020.",
+    lead: "Desenvolvedor Full Stack Sênior e Tech Lead com mais de 8 anos de experiência em engenharia de software corporativa, arquitetura orientada a serviços e sistemas de alta criticidade.",
     paragraphs: [
-      "Minha especialidade concentra-se no desenvolvimento de sistemas web complexos e APIs de alta performance, utilizando ecossistemas maduros como PHP (Laravel, WordPress, Drupal) e Python (Django), integrados a frontends modernos com JavaScript, React e Angular.",
-      "Possuo experiência comprovada em projetos de missão crítica — incluindo prestação de serviços para operações da Petrobras —, customização corporativa em C# e Microsoft Dynamics 365, além da consolidação de práticas de DevOps com Docker, Jenkins, Azure DevOps e versionamento Git.",
-      "Como Docente de Desenvolvimento de Sistemas no SENAC, conecto a vivência prática da engenharia de software com a formação de novos talentos técnicos, ministrando disciplinas que vão de arquitetura de software e segurança até redes e microsserviços."
+      "Especialista no ecossistema PHP (Laravel, Symfony, Drupal 9, WordPress) e Python (Django, Django REST Framework, FastAPI), integrando frontends reativos em React, Angular e TypeScript com modelagem relacional de alto volume (PostgreSQL, MySQL, TimescaleDB e Redis).",
+      "Possuo ampla vivência na sustentação evolutiva de microsserviços para operações offshore da Petrobras (via Simworx), liderança técnica de sistemas web de grande porte (VisioIT) e desenvolvimento de soluções corporativas customizadas no ecossistema Microsoft (C# .NET, Dynamics 365, Azure Web Apps, Key Vault e Power Platform).",
+      "Como Docente de Tecnologia da Informação no SENAC São Paulo, conecto o rigor arquitetural, Clean Code e pipelines de CI/CD à formação prática de mais de 60 alunos por módulo em Desenvolvimento de Sistemas e Infraestrutura."
     ],
     highlights: [
-      { label: "Anos de Trajetória Tech", value: "9+" },
-      { label: "Experiência Registrada", value: "5+ anos" },
-      { label: "Projetos Corporativos", value: "20+" },
-      { label: "Docência em Sistemas", value: "SENAC" }
+      { label: "Experiência em Engenharia", value: "8+ anos" },
+      { label: "Missão Crítica & Cloud", value: "Petrobras / Azure" },
+      { label: "Projetos & Arquiteturas", value: "20+" },
+      { label: "Docência & Liderança", value: "SENAC SP" }
     ]
   }
 };

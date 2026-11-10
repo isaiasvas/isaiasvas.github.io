@@ -1,87 +1,87 @@
 export const skillsData = [
   {
-    category: "Backend",
-    description: "Desenvolvimento robusto orientado a objetos, microsserviços e APIs corporativas.",
+    category: "Linguagens de Programação",
+    description: "Domínio de orientação a objetos, padrões PSR, tipagem e consultas relacionais avançadas.",
     icon: "Server",
     skills: [
-      { name: "PHP", highlight: true },
-      { name: "Laravel", highlight: true },
-      { name: "Python", highlight: true },
-      { name: "Django", highlight: true },
-      { name: "C#" },
-      { name: "Java" },
-      { name: "Spring Boot" },
-      { name: ".NET" },
-      { name: "WordPress / Drupal" }
+      { name: "PHP 8 (POO, PSRs)", highlight: true },
+      { name: "Python 3", highlight: true },
+      { name: "JavaScript (ES6+)", highlight: true },
+      { name: "TypeScript", highlight: true },
+      { name: "C# (.NET Core)", highlight: true },
+      { name: "SQL", highlight: true }
     ]
   },
   {
-    category: "Frontend",
-    description: "Interfaces dinâmicas, acessíveis, componentizadas e responsivas.",
+    category: "Frameworks & Bibliotecas",
+    description: "Ecossistemas modernos para construção de APIs robustas, SPAs reativas e portais corporativos.",
     icon: "Layout",
     skills: [
-      { name: "JavaScript (ES6+)", highlight: true },
+      { name: "Laravel 10/11", highlight: true },
+      { name: "Django", highlight: true },
+      { name: "Django REST Framework", highlight: true },
       { name: "React", highlight: true },
       { name: "Angular", highlight: true },
-      { name: "Tailwind CSS", highlight: true },
-      { name: "HTML5 & CSS3" },
-      { name: "TypeScript" },
-      { name: "Bootstrap" },
-      { name: "Responsive Design" }
+      { name: "Tailwind CSS" },
+      { name: "Alpine.js" },
+      { name: "WordPress" },
+      { name: "Drupal 9" }
     ]
   },
   {
-    category: "Banco de Dados",
-    description: "Modelagem relacional, otimização de consultas e persistência de dados.",
+    category: "Arquitetura & Engenharia",
+    description: "Desenho de sistemas distribuídos, padrões de projeto, mensageria e qualidade de software.",
+    icon: "Cpu",
+    skills: [
+      { name: "APIs RESTful", highlight: true },
+      { name: "Microsserviços", highlight: true },
+      { name: "Clean Architecture", highlight: true },
+      { name: "MVC", highlight: true },
+      { name: "Design Patterns" },
+      { name: "Mensageria MQTT" },
+      { name: "WebSockets" },
+      { name: "TDD" }
+    ]
+  },
+  {
+    category: "Bancos de Dados & Caches",
+    description: "Modelagem relacional de alto volume, séries temporais, cache em memória e tuning de queries.",
     icon: "Database",
     skills: [
       { name: "PostgreSQL", highlight: true },
       { name: "MySQL", highlight: true },
-      { name: "SQL", highlight: true },
-      { name: "Redis" },
+      { name: "Redis", highlight: true },
+      { name: "TimescaleDB", highlight: true },
+      { name: "Dataverse" },
       { name: "Modelagem Relacional" },
-      { name: "Migrations & ORMs" }
+      { name: "Query Optimization" }
     ]
   },
   {
-    category: "APIs & Arquitetura",
-    description: "Padrões de projeto, comunicação assíncrona e arquitetura escalável.",
-    icon: "Cpu",
-    skills: [
-      { name: "REST API", highlight: true },
-      { name: "Microsserviços", highlight: true },
-      { name: "Clean Architecture", highlight: true },
-      { name: "MVC", highlight: true },
-      { name: "MQTT (IoT)" },
-      { name: "Webhooks" },
-      { name: "Design Patterns" }
-    ]
-  },
-  {
-    category: "DevOps & Ferramentas",
-    description: "Automação, integração contínua e conteinerização de ambientes.",
+    category: "DevOps & Cloud",
+    description: "Conteinerização, orquestração de pipelines CI/CD e governança de infraestrutura em nuvem.",
     icon: "GitBranch",
     skills: [
-      { name: "Docker", highlight: true },
-      { name: "Git & GitHub", highlight: true },
+      { name: "Docker & Docker Compose", highlight: true },
+      { name: "Git & GitHub Actions", highlight: true },
       { name: "Jenkins", highlight: true },
-      { name: "Azure DevOps (CI/CD)", highlight: true },
-      { name: "Postman" },
-      { name: "Jira / Scrum" },
-      { name: "Linux CLI" }
+      { name: "Azure DevOps (CI/CD, Repos)", highlight: true },
+      { name: "Azure Web Apps" },
+      { name: "Azure Key Vault" },
+      { name: "Application Insights" }
     ]
   },
   {
-    category: "Plataforma Microsoft & Cloud",
-    description: "Customizações avançadas de CRM, automações e serviços em nuvem.",
+    category: "Plataforma Microsoft & Gestão",
+    description: "Customizações de CRM corporativo, automação de processos de negócio e gestão ágil.",
     icon: "Cloud",
     skills: [
-      { name: "Dynamics 365 (CRM)", highlight: true },
+      { name: "Microsoft Dynamics 365 (CRM)", highlight: true },
+      { name: "Plugins & Web APIs", highlight: true },
       { name: "Power Automate", highlight: true },
-      { name: "Azure Web Apps", highlight: true },
-      { name: "Azure Key Vault" },
-      { name: "Application Insights" },
-      { name: "PowerApps" }
+      { name: "Scrum & Kanban", highlight: true },
+      { name: "Jira" },
+      { name: "Postman" }
     ]
   }
 ];

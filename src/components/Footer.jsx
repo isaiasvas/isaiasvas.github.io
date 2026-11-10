@@ -11,7 +11,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="py-12 bg-white dark:bg-dark-surface border-t border-slate-200 dark:border-slate-800 relative z-10 transition-colors">
+    <footer className="site-footer no-print py-12 bg-white dark:bg-dark-surface border-t border-slate-200 dark:border-slate-800 relative z-10 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Brand & Headline */}
@@ -23,7 +23,7 @@ export default function Footer() {
               Isaias Silva
             </a>
             <p className="text-xs font-mono text-slate-500 dark:text-slate-400 mt-0.5">
-              Full Stack Developer & Docente de Tecnologia
+              {profileData.headline}
             </p>
           </div>
 
@@ -59,7 +59,7 @@ export default function Footer() {
 
             <a
               href={profileData.pdfResumeUrl}
-              download="curriculo-isaias-silva.pdf"
+              download="Curriculo_Isaias_Silva_ATS_Pro.pdf"
               className="p-2 rounded-xl text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-all"
               aria-label="Baixar Currículo em PDF"
               title="Baixar Currículo PDF"
@@ -72,7 +72,7 @@ export default function Footer() {
           <button
             onClick={scrollToTop}
             type="button"
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-mono text-slate-600 dark:text-slate-400 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 transition-colors"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-mono text-slate-600 dark:text-slate-400 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 transition-colors cursor-pointer"
             aria-label="Voltar ao topo da página"
           >
             <span>Topo</span>
@@ -84,7 +84,7 @@ export default function Footer() {
         <div className="mt-8 pt-8 border-t border-slate-100 dark:border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500 dark:text-slate-400 font-normal">
           <p>© {currentYear} Isaias Silva. Todos os direitos reservados.</p>
           <p className="font-mono text-[11px]">
-            Hospedado no GitHub Pages • Projetado com React & Tailwind CSS
+            Suíte Otimizador ATS Pro • React, Tailwind CSS &amp; Schema.org GEO
           </p>
         </div>
       </div>

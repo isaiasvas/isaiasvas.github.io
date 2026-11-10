@@ -5,19 +5,19 @@ import { experienceData } from '../data/experience';
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-20 md:py-28 bg-slate-50 dark:bg-dark-bg relative">
+    <section id="experience" className="no-print py-20 md:py-28 bg-slate-50 dark:bg-dark-bg relative">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          badge="Carreira Profissional"
-          title="Experiência & Trajetória"
-          subtitle="Histórico cronológico de atuação em desenvolvimento de software, consultoria corporativa e formação técnica."
+          badge="Carreira Profissional (Fórmula STAR / XYZ)"
+          title="Experiência Profissional"
+          subtitle="Histórico de impacto em engenharia de software, sustentação de microsserviços críticos (Petrobras), ecossistema Microsoft e docência técnica."
         />
 
         <div className="relative border-l-2 border-slate-200 dark:border-slate-800 ml-4 md:ml-6 space-y-12">
-          {experienceData.map((exp, index) => (
-            <div key={exp.id} className="relative pl-6 md:pl-10 group">
+          {experienceData.map((exp) => (
+            <article key={exp.id} className="relative pl-6 md:pl-10 group">
               {/* Timeline Node Icon */}
-              <div className="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-white dark:bg-dark-surface border-2 border-brand-500 flex items-center justify-center text-brand-500 shadow-sm transition-transform duration-200 group-hover:scale-110">
+              <div className="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-white dark:bg-dark-surface border-2 border-[#0F2D5A] dark:border-brand-500 flex items-center justify-center text-[#0F2D5A] dark:text-brand-400 shadow-xs transition-transform duration-200 group-hover:scale-110">
                 <Briefcase className="w-3.5 h-3.5" />
               </div>
 
@@ -29,7 +29,7 @@ export default function Experience() {
                     <span className="text-xs font-mono uppercase tracking-wider text-brand-600 dark:text-brand-400 font-semibold block">
                       {exp.type}
                     </span>
-                    <h3 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white mt-0.5">
+                    <h3 className="text-xl md:text-2xl font-bold text-[#0F2D5A] dark:text-white mt-0.5">
                       {exp.role}
                     </h3>
                     <h4 className="text-base font-semibold text-slate-700 dark:text-slate-200">
@@ -54,15 +54,32 @@ export default function Experience() {
                   {exp.description}
                 </p>
 
-                {/* Key Activities */}
-                <div className="space-y-2 mb-6">
-                  {exp.activities.map((act, actIdx) => (
-                    <div key={actIdx} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-600 dark:text-slate-300">
-                      <CheckCircle2 className="w-4 h-4 text-brand-500 flex-shrink-0 mt-0.5" />
-                      <span>{act}</span>
-                    </div>
-                  ))}
-                </div>
+                {/* Key Activities with bold lead-in domain matching DOCX */}
+                <ul className="space-y-2.5 mb-6">
+                  {exp.activities.map((act, actIdx) => {
+                    const colonIndex = act.indexOf(':');
+                    const hasLead = colonIndex !== -1 && colonIndex < 65;
+                    const leadLabel = hasLead ? act.slice(0, colonIndex + 1) : '';
+                    const restText = hasLead ? act.slice(colonIndex + 1) : act;
+
+                    return (
+                      <li
+                        key={actIdx}
+                        className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed"
+                      >
+                        <CheckCircle2 className="w-4 h-4 text-brand-500 flex-shrink-0 mt-0.5" />
+                        <span>
+                          {hasLead && (
+                            <strong className="font-bold text-slate-900 dark:text-white">
+                              {leadLabel}
+                            </strong>
+                          )}
+                          {restText}
+                        </span>
+                      </li>
+                    );
+                  })}
+                </ul>
 
                 {/* Tech Chips */}
                 <div className="pt-4 border-t border-slate-100 dark:border-slate-800/80 flex flex-wrap gap-1.5">
@@ -76,7 +93,7 @@ export default function Experience() {
                   ))}
                 </div>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>
