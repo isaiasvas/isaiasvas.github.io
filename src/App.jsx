@@ -75,7 +75,9 @@ export default function App() {
           <p className="text-[9.5pt] text-[#464646] mt-1 leading-snug">
             <span>{resumeBaseData.header.location} | </span>
             <span>{resumeBaseData.header.phone} | </span>
-            <span>{resumeBaseData.header.email} | </span>
+            <span>{resumeBaseData.header.email}</span>
+          </p>
+          <p className="text-[9.5pt] text-[#464646] mt-0.5 leading-snug">
             <strong className="font-bold text-[#0F2D5A]">{resumeBaseData.header.linkedin}</strong>
             <span> | </span>
             <strong className="font-bold text-[#0F2D5A]">{resumeBaseData.header.github}</strong>

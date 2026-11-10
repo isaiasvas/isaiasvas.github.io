@@ -123,7 +123,7 @@ function addJobHeader(role, company, period, modality) {
   doc.setFont('helvetica', 'italic');
   doc.setFontSize(9.5);
   doc.setTextColor(...COLOR_MUTED);
-  doc.text(` — ${period} (${modality})`, marginX + mainWidth, y);
+  doc.text(` — ${period} (${modality})`, marginX + mainWidth + 1.2, y);
 
   y += 4.5;
 }
@@ -144,10 +144,11 @@ y += 4.8;
 doc.setFont('helvetica', 'normal');
 doc.setFontSize(9.5);
 doc.setTextColor(...COLOR_SUBTITLE);
-const contactPrefix = `${resumeBaseData.header.location} | ${resumeBaseData.header.phone} | ${resumeBaseData.header.email} | `;
-doc.text(contactPrefix, marginX, y);
-let contactX = marginX + doc.getTextWidth(contactPrefix);
+const contactLine1 = `${resumeBaseData.header.location} | ${resumeBaseData.header.phone} | ${resumeBaseData.header.email}`;
+doc.text(contactLine1, marginX, y);
+y += 4.3;
 
+let contactX = marginX;
 doc.setFont('helvetica', 'bold');
 doc.setTextColor(...COLOR_NAVY);
 doc.text(resumeBaseData.header.linkedin, contactX, y);
@@ -155,8 +156,8 @@ contactX += doc.getTextWidth(resumeBaseData.header.linkedin);
 
 doc.setFont('helvetica', 'normal');
 doc.setTextColor(...COLOR_SUBTITLE);
-doc.text(' | ', contactX, y);
-contactX += doc.getTextWidth(' | ');
+doc.text('  |  ', contactX, y);
+contactX += doc.getTextWidth('  |  ');
 
 doc.setFont('helvetica', 'bold');
 doc.setTextColor(...COLOR_NAVY);
